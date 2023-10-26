@@ -4,21 +4,101 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML5 Boilerplate</title>
+  <title>my html page 1</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h1>Page Title</h1>
+  <main>
+  <h1>best practice is to use only one h1 element in an html page</h1>
   <script src="scripts.js"></script>
 
   <!--nested elements should be placed two spaces further to the right of the element they are nested in-->
-  <img src="https://images.unsplash.com/photo-1693275449979-aa6d53df26b8?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="a link to a photo from the internet" style="width:500px;height:600px;">
+  <section>
+    <img src="https://images.unsplash.com/photo-1693275449979-aa6d53df26b8?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="a link to a photo from the internet" style="width:500px;height:600px;">
 
-  <!--attributes are special words used inside the opening tag of an element to control the element's behavior-->
+    <!--attributes are special words used inside the opening tag of an element to control the element's behavior-->
 
-  <a href="https://www.projectrho.com/public_html/rocket/">anchor element, link to atomic rockets website</a>
-  <p>Anchor element inside of a <a href="https://www.projectrho.com/public_html/rocket/" target="_blank">paragraph element</a>.  Set target attribute to "_blank" so that the link opens in a new tab.</p>
+    <a href="https://www.projectrho.com/public_html/rocket/">anchor element, link to atomic rockets website</a>
+    <p>Anchor element inside of a <a href="https://www.projectrho.com/public_html/rocket/" target="_blank">paragraph element</a>.  Set target attribute to "_blank" so that the link opens in a new tab.</p>
+
+    <h6>this image has been turned into a link (to the atomic rockets site)</h6>
+    <a href="https://www.projectrho.com/public_html/rocket/"><img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9ja2V0fGVufDB8fDB8fHww" alt="space x rocket" style="width:500px;height:600px;"></a>
+    <h5>both image and text inside of anchor element</h5>
+    <a href="https://www.projectrho.com/public_html/rocket/"><img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9ja2V0fGVufDB8fDB8fHww" alt="space x rocket" style="width:500px;height:600px;">anchor element, link to atomic rockets website</a>
+  </section>
+  <section>
+    <h2>new section</h2>
+      <h3>new subsection</h3>
+        <ul>
+            <li>unordered list</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+        </ul>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1488278905738-514111aa236c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo of the ocean" style="width:500px;height:600px;">
+            <figcaption>A photo of the ocean</figcaption>
+        </figure>
+        <p>Use the emphasis element <em>to italicize</em> text.</p>
+        <ol>
+            <li>ordered list</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+            <li>another list item</li>
+        </ol>
+        <p>Use the <strong>strong element</strong> to make bold text.</p>
+  </section>
+  <section>
+    <h2>Forms</h2>
+    <!--the action attribute indicates where form data should be sent.  e.g. <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url-->
+    <form action="">
+        <input type="text" name="textinput1" placeholder="enter text here" required>
+        <!--The default behavior of clicking a form button without any attributes submits the form to the location specified in the form's action attribute.
+        However, relying on default behavior may cause confusion.-->
+        <button type="submit">submit button</button>
+    </form>
+  
+  </section>
+  <section>
+    <input type="radio">Radio button one
+    <label><input id="indoor" type="radio">radio button inside of label element</label>
+
+    <fieldset>
+      <legend>Survey question here</legend>
+      <label><input name="radios2" value="option 1" id="indoor2" type="radio" checked>option 1</label>
+      <label><input name="radios2" value="option 2" id="indoor3" type="radio">option 2</label>
+    </fieldset>
+    <fieldset>
+      <legend>survey question 2</legend>
+      <input name="this option" id="option ty" value="option ty" type="checkbox" checked> <label for="option ty">option Z</label>
+      <input name="this option" id="option tyq" value="option tyq" type="checkbox"> <label for="option tyq">option Zq</label>
+    </fieldset>
+
+    
+  </section>
+
+  </main>
+  <footer>
+    <p>no copyright</p>
+  </footer>
+
+
+
 </body>
 
 </html>
