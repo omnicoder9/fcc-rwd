@@ -1,0 +1,76 @@
+/* type selectors */
+h1, h2, p {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: Impact, serif;/* fallback fonts are used when the first font is not found/available */
+}
+
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+    /* default border-width is 1 px for all edges of hr, so the total height is 4 px*/
+}
+
+body {
+    /* background-color: burlywood; */
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* an id selector is defined by placing a hash symbol directly in front of the element's id value */
+/*#menu {*/
+/* however, it's more common to use a class selector*/
+.menu {
+    /* width: 300px; */
+    width: 80%;
+    background-color: burlywood;
+    /* margin: invisible space around an element */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 20px;
+    max-width: 500px;
+}
+
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+}
+.price {
+    text-align: right;
+    width: 25%; /* styling the p elements as inline-block and placing them on separate lines in the code creates an extra space to the right of the first p element, causing the second one to shift to the next line.*/
+    /* one way to fix this is to make each p element's width a little less than 50% */
+}
+.item p {
+    display: inline-block;/* inline-block elements only take up the width of their content.  need to add width property to flavor and price */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.established {
+    font-style: italic;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+/* FOOTER */
+footer {
+    font-size: 14px;
+}
