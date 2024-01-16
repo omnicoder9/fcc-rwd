@@ -9,6 +9,9 @@ h1, h2 {
 
 h1 {
     font-size: 40px;
+    /*override h1 default top and bottom margins*/
+    margin-top:0;
+    margin-bottom:15px;
 }
 h2 {
     font-size: 30px;
@@ -26,6 +29,13 @@ body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
     padding: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
 }
 
 /* an id selector is defined by placing a hash symbol directly in front of the element's id value */
@@ -70,7 +80,25 @@ body {
     margin-top: 25px;
 }
 
+.address {
+    margin-bottom: 5px;
+}
+
 /* FOOTER */
 footer {
     font-size: 14px;
+}
+
+a {
+    color: black;
+}
+/* pseudo selectors */
+a:visited{
+    color:grey;
+}
+a:hover{
+    color: brown;
+}
+a:active{
+    color:white;
 }
