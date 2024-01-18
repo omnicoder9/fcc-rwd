@@ -1,0 +1,74 @@
+h1 {
+    text-align: center;
+    /* background-color: rgb(0,255,255); */
+}
+
+.marker {
+    /*background-color: red;*/
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;/* margin top and bottom are first value, margin left and right are second value */
+}
+
+.red {
+    background: linear-gradient(90deg);/* */
+}
+
+.green {
+    background-color: #007F00;/*  */
+}
+
+.blue {
+    background-color: hsl(240,100%,50%);/*  */
+}
+/* There are two main color models: the additive RGB (red, green, blue) model used in electronic devices, and the subtractive CMYK (cyan, magenta, yellow, black) model used in print. */
+.container {
+    background-color: rgb(255,255,255); /* Each red, green, and blue value is a number from 0 to 255. 0 means that there's 0% of that color.  255 means that there's 100% of that color.*/
+    padding: 10px 0;/* padding top and bottom are first value, padding left and right are second value */
+}
+
+/*
+primary colors: red, green, blue
+
+secondary colors:
+pure red + pure green = yellow 
+pure green + pure blue = cyan
+pure red + pure blue = magenta
+
+tertiary colors:
+orange: rgb(255,127,0); pure red + dark green; orange is a combination of red and yellow
+spring green: rgb(0,255,127); cyan and pure green
+violet: rgb(127,0,255);magenta and blue
+chartreuse green: rgb(127,255,0); green + yellow
+azure: rgb(0,127,255); blue + cyan
+rose: rgb(255,0,127); red + magenta
+
+A color wheel is a circle where similar colors, or hues, are near each other, and different ones are further apart.  e.g. pure red is between the hues rose and orange.
+Two colors that are opposite from each other on the color wheel are called complementary colors.  If two complementary colors are combined, they produce gray.  
+But if they are placed side-by-side, these colors produce strong visual contrast and appear brighter.
+This contrast can be distracting if it's overused on a website, and can make text hard to read if it's placed on a complementary-colored background.
+It's better practice to choose one color as the dominant color, and use its complementary color as an accent to bring attention to certain content on the page.
+complementary colors: red and cyan
+
+hexadecimal color values:
+pure green: #00FF00;
+*/
+
+/*A very common way to apply color to an element with CSS is with hexadecimal or hex values.  They're really just another form of RGB values.
+Hex color values start with a # character and take six characters from 0-9 and A-F.  The first pair of characters represent red, the second pair represent green, and the thir pair represent blue.
+Hexadecimal, or base 16 values, go from 0-9, then A-F.
+With hex colors, 00 is 0% of that color, and FF is 100%.
+*/
+
+/*
+The HSL color model, or hue, saturation, and lightness, is another way to represent colors.
+The CSS hsl function accepts 3 values: a number from 0 to 360 for hue, a percentage from 0 to 100 for saturation, and a percentage from 0 to 100 for lightness.
+If you imagine a color wheel, the hue red is at 0 degrees, green is at 120 degrees, and blue is at 240 degrees.
+Saturation is the intensity of a color from 0%, or gray, to 100% for pure color.  You must add the percent sign  to the saturation and lightness values.
+Lightness is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral.
+*/
+/*
+linear-gradient(gradientDirection, color1, color2, ...);
+gradientDirection is the direction of the lien used for the transition.  
+color1 and color2 are color arguments, which are the colors that will be used in the transition itself
+*/
